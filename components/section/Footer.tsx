@@ -1,8 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Youtube } from "lucide-react";
+import { li } from "framer-motion/client";
 
 export default function Footer() {
+  const handleScrollToSection = (e: React.MouseEvent<HTMLButtonElement>, clicked: string) => {
+    e?.preventDefault()
+    const el = document.getElementById(clicked)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      el.focus({ preventScroll: true })
+    } else {
+      // fallback: change hash (useful if contact is on another route)
+      window.location.hash = '#contact'
+    }
+
+  }
+  const navigation = ["Home", "AboutMe", "VideoPortofolio", "Projects", "Contact"]
   return (
     <footer className="bg-[#0d1117] text-gray-300 py-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -61,18 +75,9 @@ export default function Footer() {
         <div>
           <h3 className="text-white font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li>
-              <a href="#home" className="hover:text-white transition">Home</a>
-            </li>
-            <li>
-              <a href="#projects" className="hover:text-white transition">Projects</a>
-            </li>
-            <li>
-              <a href="#about" className="hover:text-white transition">About</a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-white transition">Contact</a>
-            </li>
+            {navigation.map((item, i) => {
+              return <li key={i}><button onClick={(e) => handleScrollToSection(e, item)}></button></li>
+            })}
           </ul>
         </div>
       </div>

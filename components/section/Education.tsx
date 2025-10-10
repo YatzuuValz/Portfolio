@@ -24,7 +24,7 @@ export default function EducationSection() {
                 "Graduated with a science concentration. Actively participated in programming competitions and tech communities.",
         },
     ];
-
+    
     return (
         <section id="Education" className="py-20 bg-slate-50 ">
             <div className="max-w-6xl mx-auto px-6 text-center">
