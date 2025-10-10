@@ -4,6 +4,7 @@
 import { Suspense } from 'react';
 import Header from '../../components/header';
 import Image from 'next/image';
+import { Analytics } from "@vercel/analytics/next"
 
 import HomePage from '../../components/section/HomePage';
 import Skills from '../../components/section/Skills';
@@ -16,6 +17,7 @@ import Footer from '../../components/section/Footer';
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-violet-900 via-purple-800 to-fuchsia-700 relative overflow-hidden">
+      <Analytics />
       <Suspense>
         <Header />
         <HomePage projects={5} edited={50} />
@@ -26,6 +28,7 @@ export default function Home() {
         <Contacts />
         <Footer />
       </Suspense>
+
     </div>
   );
 }
