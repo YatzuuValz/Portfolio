@@ -44,7 +44,7 @@ export default function FeaturedProjects() {
   };
 
   return (
-    <section className="py-20 bg-slate-50 ">
+    <section id='Projects' className="py-20 bg-slate-50 ">
       <div className="max-w-7xl mx-auto text-center px-6">
         <h2 className="text-3xl font-bold text-gray-900 mb-3">Featured Web Projects</h2>
         <p className="text-gray-600 mb-12">
@@ -67,9 +67,8 @@ export default function FeaturedProjects() {
                   className="w-full object-cover"
                 />
                 <span
-                  className={`absolute top-4 right-4 text-xs font-semibold text-white px-3 py-1 rounded-full ${
-                    project.tag === 'Mobile App' ? 'bg-fuchsia-600' : 'bg-blue-600'
-                  }`}
+                  className={`absolute top-4 right-4 text-xs font-semibold text-white px-3 py-1 rounded-full ${project.tag === 'Mobile App' ? 'bg-fuchsia-600' : 'bg-blue-600'
+                    }`}
                 >
                   {project.tag}
                 </span>

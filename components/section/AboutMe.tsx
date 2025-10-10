@@ -10,13 +10,12 @@ type Props={
 export default function AboutSection({projects,edited}:Props) {
   const handleScrollToContact = (e: React.MouseEvent<HTMLButtonElement>) => {
     e?.preventDefault()
-    const el = document.getElementById('contact')
+    const el = document.getElementById('Contact')
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' })
       el.focus({ preventScroll: true })
     } else {
-      // fallback: change hash (useful if contact is on another route)
-      window.location.hash = '#contact'
+      window.location.hash = '#Contact'
     }
   }
 

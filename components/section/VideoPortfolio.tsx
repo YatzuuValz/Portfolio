@@ -15,7 +15,7 @@ export default function VideoShowcase() {
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-6">
+    <section id="VideoPortofolio" className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-6">
       <h2 className="text-2xl font-bold mb-8">Featured Videos</h2>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-6">

@@ -3,7 +3,7 @@ import { Code, Video } from 'lucide-react';
 
 export default function Skills() {
   return (
-    <section className="skills w-full py-24 bg-white text-gray-900 transition-colors duration-500">
+    <section id='Skills' className=" w-full py-24 bg-white text-gray-900 transition-colors duration-500">
       <div className="max-w-5xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold">Skills & Expertise</h2>
         <p className="text-gray-600 mt-2">

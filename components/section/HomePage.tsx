@@ -9,7 +9,7 @@ type Props={
 
 export default function HomePage({projects,edited}:Props) {
   return (
-    <main className="relative z-10 max-w-7xl mx-auto px-8 py-16 mt-16">
+    <main id='Home' className="relative z-10 max-w-7xl mx-auto px-8 py-16 mt-16">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           {/* <div className="inline-flex items-center space-x-2 bg-purple-800/50 rounded-full px-4 py-2 backdrop-blur-sm">
