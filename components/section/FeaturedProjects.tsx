@@ -6,11 +6,10 @@ import { motion } from "framer-motion";
 
 export default function FeaturedProjects() {
   const projects = [
-    
     {
       title: 'Food Ordering',
       description:
-        'Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
+        'An online food ordering interface I built out of frustration because some sites didn’t have an “All” tab 😅. It allows browsing food by category and adjusting quantity',
       image: '/Projects/OrderFood.png',
       link: "",
       tech: ['React', 'Tailwind'],
@@ -18,18 +17,18 @@ export default function FeaturedProjects() {
     {
       title: 'Rock Paper Scisscor',
       description:
-        'Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
+        'A fun little browser game where you can play Rock, Paper, Scissors against the computer or let it play automatically. It tracks scores and displays live results',
       image: '/Projects/RPS.png',
       link: "https://yatzuuvalz.github.io/R-P-S",
-      tech: ['HTML', 'CSS',"JS"],
+      tech: ['HTML', 'CSS', "JS"],
     },
     {
-      title: 'Calculator',
+      title: 'Yatzuu Shop',
       description:
-        'Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
-      image: '/Projects/Calculator.png',
-      link: "https://yatzuuvalz.github.io/Calculator",
-      tech: ['HTML', 'CSS',"JS"],
+        'A simple e-commerce-style web app where you can create, view, and manage products. It supports adding custom products with images, prices, and categories. Designed with a clean UI and modal-based product editing.',
+      image: '/Projects/RPS.png',
+      link: "https://yahya-muhandar-yatzuushop.pbp.cs.ui.ac.id",
+      tech: ['HTML', 'CSS', "JS"],
     },
   ];
 
@@ -43,6 +42,9 @@ export default function FeaturedProjects() {
     'React Native': 'bg-indigo-100 text-indigo-700',
     'API Integration': 'bg-emerald-100 text-emerald-700',
     'Charts.js': 'bg-orange-100 text-orange-700',
+    HTML: 'bg-red-100 text-red-700',
+    CSS: 'bg-blue-100 text-blue-700',
+    JavaScript: 'bg-yellow-100 text-yellow-700',
   };
 
   return (
@@ -70,7 +72,7 @@ export default function FeaturedProjects() {
                   height={400}
                   className="w-full object-cover"
                 />
-                
+
                 {/* <span
                   className={`absolute top-4 right-4 text-xs font-semibold text-white px-3 py-1 rounded-full ${project.tag === 'Mobile App' ? 'bg-fuchsia-600' : 'bg-blue-600'
                     }`}
