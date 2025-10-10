@@ -2,19 +2,35 @@
 
 import { Code, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
+import { motion } from "framer-motion";
 
 export default function FeaturedProjects() {
   const projects = [
+    
     {
       title: 'Food Ordering',
       description:
         'Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
       image: '/Projects/OrderFood.png',
       link: "",
-      tag: 'Web App',
       tech: ['React', 'Tailwind'],
     },
-    
+    {
+      title: 'Rock Paper Scisscor',
+      description:
+        'Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
+      image: '/Projects/RPS.png',
+      link: "https://yatzuuvalz.github.io/R-P-S",
+      tech: ['HTML', 'CSS',"JS"],
+    },
+    {
+      title: 'Calculator',
+      description:
+        'Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
+      image: '/Projects/Calculator.png',
+      link: "https://yatzuuvalz.github.io/Calculator",
+      tech: ['HTML', 'CSS',"JS"],
+    },
   ];
 
   const techColors: Record<string, string> = {
@@ -39,8 +55,10 @@ export default function FeaturedProjects() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
-            <div
+            <motion.div
               key={idx}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
               className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
             >
               {/* Image + Tag */}
@@ -52,12 +70,13 @@ export default function FeaturedProjects() {
                   height={400}
                   className="w-full object-cover"
                 />
-                <span
+                
+                {/* <span
                   className={`absolute top-4 right-4 text-xs font-semibold text-white px-3 py-1 rounded-full ${project.tag === 'Mobile App' ? 'bg-fuchsia-600' : 'bg-blue-600'
                     }`}
                 >
                   {project.tag}
-                </span>
+                </span> */}
               </div>
 
               {/* Text content */}
@@ -95,7 +114,7 @@ export default function FeaturedProjects() {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
