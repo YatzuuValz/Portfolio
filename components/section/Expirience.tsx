@@ -42,7 +42,7 @@ export default function OrganizationalExperience() {
             role: "Events Section (Pacilthon)",
             period: "Sep 2024 – Des 2024",
             location: "Depok",
-            img: "/org/pacilthon-event.jpg",
+            img: "/Organization/depor.jpeg",
             details: [
                 "Served as a member of the Events Section for the Pacilthon event, coordinating the event flow and ensuring each session followed the schedule.",
                 "Contributed to planning the event concept and inter-divisional communication to ensure smooth event execution.",
