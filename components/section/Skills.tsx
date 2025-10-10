@@ -1,5 +1,6 @@
 'use client';
 import { Code, Video } from 'lucide-react';
+import { motion } from "framer-motion"
 
 export default function Skills() {
   return (
@@ -13,7 +14,12 @@ export default function Skills() {
 
       <div className="grid md:grid-cols-2 gap-10 max-w-8/10 mx-auto">
         {/* Frontend Development */}
-        <div className="bg-indigo-50 rounded-2xl p-6 shadow-sm">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.15, duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-indigo-50 rounded-2xl p-6 shadow-sm">
           <div className='flex items-center mb-5 gap-5'>
             <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
               <Code />
@@ -32,19 +38,26 @@ export default function Skills() {
               { name: 'Next.js', color: '#68A063' },
               { name: 'Tailwind', color: '#3776AB' },
             ].map((skill) => (
-              <div
+              <motion.div
                 key={skill.name}
-                className="bg-white rounded-lg px-5 py-6 text-sm font-bold flex items-center shadow-sm border border-gray-100"
-                
+                whileHover={{ scale: 1.03, boxShadow: "0 8px 20px rgba(99,102,241,0.2)" }}
+                transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                style={{ transformOrigin: "center" }}
+                className="bg-white rounded-lg px-5 py-6 text-sm font-bold flex items-center justify-center shadow-sm border border-gray-100 cursor-default"
               >
                 {skill.name}
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* Video Editing */}
-        <div className="bg-purple-50 rounded-2xl p-6 shadow-sm">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.15, duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-purple-50 rounded-2xl p-6 shadow-sm">
           <div className='flex items-center mb-5 gap-5'>
             <div className="w-14 h-14 bg-purple-600 text-white rounded-2xl flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
               <Video />
@@ -62,15 +75,18 @@ export default function Skills() {
               { name: 'Audio Editing', color: '#22C55E' },
               { name: 'Color Grading', color: '#3B82F6' },
             ].map((skill) => (
-              <div
+              <motion.div
                 key={skill.name}
-                className="bg-white rounded-lg px-5 py-6 text-sm font-bold flex items-center shadow-sm border border-gray-100"
+                whileHover={{ scale: 1.03, boxShadow: "0 8px 20px rgba(99,102,241,0.2)" }}
+                transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                style={{ transformOrigin: "center" }}
+                className="bg-white rounded-lg px-5 py-6 text-sm font-bold flex items-center justify-center shadow-sm border border-gray-100 cursor-default"
               >
                 {skill.name}
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
