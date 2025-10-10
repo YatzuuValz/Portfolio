@@ -11,8 +11,8 @@ export default function VideoShowcaseStyled() {
     { img: "/videos/iphone.jpg", link: "https://www.tiktok.com/@tokocrypto/video/7554057203863326008?is_from_webapp=1&sender_device=pc", title: "Iphone 17 vs Bitcoin", source: "TikTok" },
     { img: "/videos/komisi.png", link: "https://www.tiktok.com/@tokocrypto/video/7538071358534683910?is_from_webapp=1&sender_device=pc", title: "tokocrypto 50% commission", source: "TikTok" },
     { img: "/videos/bangkitlahlek.jpg", link: "https://www.tiktok.com/@raidagil/video/7545861328532016440?is_from_webapp=1&sender_device=pc", title: "Indonesia Masih Punya Harapan", source: "TikTok" },
-    { img: "/videos/nuanu.png", link: "https://www.tiktok.com/@tokocrypto/video/7538071358534683910?is_from_webapp=1&sender_device=pc", title: "Quick tip", source: "TikTok" },
-    { img: "/videos/nuanu.png", link: "https://www.tiktok.com/@tokocrypto/video/7538071358534683910?is_from_webapp=1&sender_device=pc", title: "Quick tip", source: "TikTok" },
+    { img: "/videos/Blu.jpg", link: "https://www.tiktok.com/@tokocrypto/video/7553613101841583416?is_from_webapp=1&sender_device=pc", title: "Blu by BCA Digital x Tokocrypto", source: "TikTok" },
+    { img: "/videos/kebut.jpg", link: "https://www.tiktok.com/@tokocrypto/video/7558084542850944263?is_from_webapp=1&sender_device=pc", title: "Kejar Keberuntungan", source: "TikTok" },
   ];
 
   return (
