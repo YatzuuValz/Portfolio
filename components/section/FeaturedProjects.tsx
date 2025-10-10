@@ -20,15 +20,15 @@ export default function FeaturedProjects() {
         'A fun little browser game where you can play Rock, Paper, Scissors against the computer or let it play automatically. It tracks scores and displays live results',
       image: '/Projects/RPS.png',
       link: "https://yatzuuvalz.github.io/R-P-S",
-      tech: ['HTML', 'CSS', "JS"],
+      tech: ['HTML', 'CSS', "JavaScript"],
     },
     {
       title: 'Yatzuu Shop',
       description:
         'A simple e-commerce-style web app where you can create, view, and manage products. It supports adding custom products with images, prices, and categories. Designed with a clean UI and modal-based product editing.',
-      image: '/Projects/RPS.png',
+      image: '/Projects/yatzuuShop.png',
       link: "https://yahya-muhandar-yatzuushop.pbp.cs.ui.ac.id",
-      tech: ['HTML', 'CSS', "JS"],
+      tech: ['HTML', 'CSS', "JavaScript"],
     },
   ];
 
@@ -61,7 +61,7 @@ export default function FeaturedProjects() {
               key={idx}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
-              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+              className="flex flex-col bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
             >
               {/* Image + Tag */}
               <div className="relative">
@@ -82,7 +82,7 @@ export default function FeaturedProjects() {
               </div>
 
               {/* Text content */}
-              <div className="p-6 text-left">
+              <div className="flex flex-col p-6 text-left mt-auto">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {project.title}
                 </h3>
@@ -109,7 +109,7 @@ export default function FeaturedProjects() {
                     <Code /> Code
                   </a> */}
                   <a
-                    href="#"
+                    href={project.link}
                     className="flex items-center gap-1 text-blue-600 hover:underline"
                   >
                     <ExternalLink /> Live Demo
