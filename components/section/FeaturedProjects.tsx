@@ -26,7 +26,7 @@ export default function FeaturedProjects() {
       title: 'Yatzuu Shop',
       description:
         'A simple e-commerce-style web app where you can create, view, and manage products. It supports adding custom products with images, prices, and categories. Designed with a clean UI and modal-based product editing.',
-      image: '/Projects/yatzuuShop.png',
+      image: '/Projects/YatzuuShop.png',
       link: "https://yahya-muhandar-yatzuushop.pbp.cs.ui.ac.id",
       tech: ['HTML', 'CSS', "JavaScript"],
     },
