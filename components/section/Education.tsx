@@ -26,7 +26,7 @@ export default function EducationSection() {
     ];
 
     return (
-        <section id="Education" className="py-20 bg-white">
+        <section id="Education" className="py-20 bg-slate-50 ">
             <div className="max-w-6xl mx-auto px-6 text-center">
                 <h2 className="text-3xl font-bold text-gray-900 mb-3 flex items-center justify-center gap-2">
                     <GraduationCap /> Education

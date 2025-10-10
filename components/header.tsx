@@ -15,7 +15,7 @@ export default function Header() {
     }
 
   }
-  const navigation = ["Home","AboutMe","Education","VideoPortofolio", "Projects", "Skills",  "Contact"]
+  const navigation = ["Home","AboutMe","VideoPortofolio","Projects","OrganizationalExperience","Education",  "Skills",  "Contact"]
   return (
     <header
       className="fixed z-90 flex items-center justify-between px-8 py-6 top-0 right-0 left-0 bg-gradient-to-br from-violet-900 via-purple-800 to-fuchsia-700">

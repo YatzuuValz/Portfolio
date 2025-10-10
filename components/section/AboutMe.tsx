@@ -20,7 +20,7 @@ export default function AboutSection({projects,edited}:Props) {
   }
 
   return (
-    <section id='AboutMe' className="py-16 bg-white">
+    <section id='AboutMe' className="py-16 bg-slate-100 ">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left content */}

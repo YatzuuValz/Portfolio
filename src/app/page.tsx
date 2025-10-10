@@ -15,6 +15,7 @@ import AboutMe from '../../components/section/AboutMe';
 import Contacts from '../../components/section/Contacts';
 import Footer from '../../components/section/Footer';
 import Education from '../../components/section/Education';
+import OrganizationalExperience from '../../components/section/Expirience';
 
 export default function Home() {
   return (
@@ -24,10 +25,11 @@ export default function Home() {
         <Header />
         <HomePage projects={5} edited={50} />
         <AboutMe projects={5} edited={50} />
-        <Education/>
-        <Skills />
         <VideoPortfolio />
         <FeaturedProjects />
+        <OrganizationalExperience/>
+        <Education/>
+        <Skills />
         <Contacts />
         <Footer />
 
