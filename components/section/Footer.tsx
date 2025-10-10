@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {/* Brand + Description */}
         <div>
-          <h2 className="text-xl font-bold text-white mb-3">DevCreative</h2>
+          <h2 className="text-xl font-bold text-white mb-3">Yahya</h2>
           <p className="text-sm text-gray-400 mb-6">
             Combining code and creativity to build exceptional digital experiences.
           </p>
@@ -78,7 +78,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} DevCreative. All rights reserved.
+        © {new Date().getFullYear()} Yahya. All rights reserved.
       </div>
     </footer>
   );
