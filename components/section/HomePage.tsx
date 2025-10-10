@@ -33,7 +33,7 @@ export default function HomePage({projects,edited}:Props) {
 
           <div className="flex flex-wrap gap-4">
             <a href="#AboutMe">
-              <button className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl gap-x-3">
+              <button className="flex cursor-pointer items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl gap-x-3">
                 <Play />
                 View Portfolio
               </button>

@@ -6,29 +6,15 @@ import Image from 'next/image';
 export default function FeaturedProjects() {
   const projects = [
     {
-      title: 'E-Commerce Platform',
+      title: 'Food Ordering',
       description:
         'Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
-      image: '/projects/ecommerce.png',
+      image: '/Projects/OrderFood.png',
+      link: "",
       tag: 'Web App',
-      tech: ['React', 'Node.js', 'MongoDB'],
+      tech: ['React', 'Tailwind'],
     },
-    {
-      title: 'Task Management App',
-      description:
-        'Collaborative task management platform with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: '/projects/taskapp.png',
-      tag: 'Web App',
-      tech: ['Vue.js', 'Firebase', 'Tailwind'],
-    },
-    {
-      title: 'Weather Dashboard',
-      description:
-        'Beautiful weather application with location-based forecasts, interactive maps, and personalized weather alerts.',
-      image: '/projects/weather.png',
-      tag: 'Mobile App',
-      tech: ['React Native', 'API Integration', 'Charts.js'],
-    },
+    
   ];
 
   const techColors: Record<string, string> = {
@@ -95,12 +81,12 @@ export default function FeaturedProjects() {
 
                 {/* Buttons */}
                 <div className="flex items-center gap-4 text-sm font-medium">
-                  <a
+                  {/* <a
                     href="#"
                     className="flex items-center gap-1 text-blue-600 hover:underline"
                   >
                     <Code /> Code
-                  </a>
+                  </a> */}
                   <a
                     href="#"
                     className="flex items-center gap-1 text-blue-600 hover:underline"
