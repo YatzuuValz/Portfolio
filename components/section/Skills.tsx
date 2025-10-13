@@ -69,10 +69,8 @@ export default function Skills() {
           <div className="grid grid-cols-2 gap-3">
             {[
               { name: 'Premiere Pro', color: '#9999FF' },
-              { name: 'After Effects', color: '#EA4C89' },
               { name: 'DaVinci Resolve', color: '#5865F2' },
               { name: 'Motion Graphics', color: '#F87171' },
-              { name: 'Audio Editing', color: '#22C55E' },
               { name: 'Color Grading', color: '#3B82F6' },
             ].map((skill) => (
               <motion.div

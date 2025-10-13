@@ -43,14 +43,15 @@ export default function VideoShowcaseStyled() {
           Short-form videos from my personal portfolio, showcasing some of my best edited works.
         </p>
       </motion.header>
-      <div className="relative w-full grid grid-row-2 gap-10 justify-around md:grid-cols-[3fr_2fr]">
+      <div className="relative w-full grid grid-row-2 gap-10 justify-around lg:grid-cols-[3fr_2fr]">
         <div>
           <motion.div
             id="Featurevideo"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.12, duration: 0.6 }}
-            className="flex flex-row items-center justify-center gap-6"
+            className="flex flex-col sm:flex-row items-center justify-center gap-6"
+
           >
             {videos.slice(0, 3).map((v, i) => {
               const isCenter = i === 1;
