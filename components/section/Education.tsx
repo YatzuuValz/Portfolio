@@ -21,7 +21,7 @@ export default function EducationSection() {
             period: "2021 — 2024",
             image: "/Education/SMA.png", // 🏫 your high school logo
             description:
-                "Graduated with a science concentration. Actively participated in programming competitions and tech communities.",
+                "Graduated with a science concentration.",
         },
     ];
     
